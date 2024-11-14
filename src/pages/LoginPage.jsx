@@ -1,12 +1,28 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 const LoginPage = () => {
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+
+  const handleLogin = async () => {
+    try {
+      
+    } catch (e) {
+      console.error(e);
+    }
+  }
   
   return (
     <div className='flex flex-col items-center'>
-          <h1 class="bg-gradient-to-r mb-8 text-5xl font-extrabold from-blue-600 via-green-500 to-indigo-400 inline-block text-transparent bg-clip-text">
+          <h1 class="my-8 text-5xl font-extrabold ">
               로그인
-          </h1>
+      </h1>
+      <div>
+        <form action="">
+          <input type="email" />
+          <input type="password" />
+        </form>
+      </div>
       <div>
         
       </div>
